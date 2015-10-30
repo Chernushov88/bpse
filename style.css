@@ -1,0 +1,234 @@
+﻿@charset "utf-8";
+
+@import url(css/media.css);
+@import url(css/reset.css);
+
+
+/* ----------------------------Блок присоединения шрифтов--------------------------------*/
+
+@font-face {
+font-family: 'HelveticaNeueCyr-Light';
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff') format('woff'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf') format('truetype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.svg#fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HelveticaNeueCyr-Roman';
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot');
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff') format('woff'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.svg#fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HelveticaNeueCyr-Medium';
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot');
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff') format('woff'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.svg#fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HelveticaNeueCyr-Bold';
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot');
+src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff') format('woff'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+ url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.svg#fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/* ------------------------------ Конец блока присоединения шрифтов ------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  TYPOGRAPHY
+/*-----------------------------------------------------------------------------------*/
+body{
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
+    color: #2d3e50;
+    background: #fff;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------------------------  Start header ------------------------------ */
+header{
+    width: 100%;
+}
+.header-inside{
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0px 12px 0px;
+    border: 0px solid #00ccff;
+}
+.logo{
+    width: 33.33%;   
+    float: left;
+    border: 0px solid #0f0cff;
+}
+.logo-a{
+    display: block;
+    height: 47px;
+    margin: 0 0 0 30px;
+    background: url(images/logo-bg.jpg) no-repeat;
+}
+.enter-contacts{
+    width: 33.34%;
+    float: left;
+    border: 0px solid #99fcff;
+}
+.enter-contacts-inside{
+    width: 269px;
+    margin: 0 auto;
+    padding: 0 0 0 30px;
+}
+.enter-contacts a{
+    display: block;    
+    padding: 18px 0 0px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;   
+    color: #2d3e50; 
+}
+.enter-contacts a:hover{
+    text-decoration: underline;    
+}
+.enter{
+    float: left;
+}
+.contacts{
+    float: right;
+}
+.enter-contacts-span{
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: 0 0 0  21px;
+    background: url(images/enter-contacts-span.png) no-repeat;
+    float: left;
+}
+.search-user{    
+    float: right;
+}
+.search{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 16px 0px 0 0;
+    background: url(images/search-bg.png) no-repeat;
+    float: right;
+}
+.user{
+    display: block;
+    width: 20px;
+    height: 24px;
+    margin: 16px 30px 0 24px;
+    background: url(images/user-bg.png) no-repeat;
+    float: right;
+}
+/* ------------------------------  Stop header ------------------------------ */
+
+/* ------------------------------  Start content ------------------------------ */
+.content{
+    overflow: hidden;    
+}
+.content section{
+    width: 33.33%;
+    padding: 53px 0 0 0;
+    float: left;
+}
+/* content-suppliers */
+.content-suppliers{
+    height: 774px;
+    background: #eac85d;
+}
+.content-companies {
+    height: 774px;
+    background: #e87352;
+}
+.content-tenders{
+    height: 774px;
+    background: #3abec0;
+}
+
+.content-inside{
+    padding: 0 25px 0 30px;
+}
+.content-suppliers:hover .hover-content-inside, .content-companies:hover .hover-content-inside, .content-tenders:hover .hover-content-inside{
+    display: block ;
+}
+.content-inside h2{
+    height: 127px;
+    margin: 0 0 0 -30px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.content-inside h3{
+    height: 144px;;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    text-align: left;
+    font-family: 'HelveticaNeueCyr-Medium';
+}
+.content-inside ul{
+    height: 199px;
+    text-transform: uppercase;
+    line-height: 29px;
+}
+.content-inside ul > li{
+    position: relative;
+}
+.content-inside ul > li:last-child{
+    margin: -4px 0 0 31px;
+}
+.content-inside ul a{
+    display: block;
+    padding: 0 0 0 20px;
+    color: #2d3e50;
+}
+.content-inside ul a:hover{
+    text-decoration: underline; 
+}
+.content-inside ul > li > a:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 9px;
+    height: 9px;
+    margin: 7px 0px 0px 0;
+    background: #2a4151;
+    float: left;
+}
+.content-inside ul > li:hover > a:before{
+    background: #fff;
+}
+.content-inside p{
+    height: 240px;
+    line-height: 24px;
+}
+.hover-content-inside{
+    display: none;
+    width: 100%;
+    height: 64px;
+    background: rgba(1,1,1, 0.1) url(images/hover-content-inside-bg.png) 30px 25px no-repeat;
+}
+
+/* ------------------------------  Stop content ------------------------------ */
+
