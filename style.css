@@ -65,7 +65,9 @@ body{
 a{
     text-decoration: none;
 }
-
+/*-----------------------------------------------------------------------------------*/
+/*  INDEX
+/*-----------------------------------------------------------------------------------*/
 /* ------------------------------  Start header ------------------------------ */
 header{
     width: 100%;
@@ -93,9 +95,9 @@ header{
     border: 0px solid #99fcff;
 }
 .enter-contacts-inside{
-    width: 269px;
+    width: 307px;
     margin: 0 auto;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 37px;
 }
 .enter-contacts a{
     display: block;    
@@ -141,14 +143,13 @@ header{
     float: right;
 }
 /* ------------------------------  Stop header ------------------------------ */
-
 /* ------------------------------  Start content ------------------------------ */
 .content{
     overflow: hidden;    
 }
-.content section{
+.content .content-suppliers, .content .content-companies, .content .content-tenders{
     width: 33.33%;
-    padding: 53px 0 0 0;
+    padding: 50px 0 0 0;
     float: left;
 }
 /* content-suppliers */
@@ -166,7 +167,7 @@ header{
 }
 
 .content-inside{
-    padding: 0 25px 0 30px;
+    padding: 0 25px 0 29px;
 }
 .content-suppliers:hover .hover-content-inside, .content-companies:hover .hover-content-inside, .content-tenders:hover .hover-content-inside{
     display: block ;
@@ -178,6 +179,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    letter-spacing: 1px;
 }
 .content-inside h3{
     height: 144px;;
@@ -188,19 +190,20 @@ header{
     font-family: 'HelveticaNeueCyr-Medium';
 }
 .content-inside ul{
-    height: 199px;
+    height: 201px;
     text-transform: uppercase;
-    line-height: 29px;
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 .content-inside ul > li{
     position: relative;
 }
 .content-inside ul > li:last-child{
-    margin: -4px 0 0 31px;
+    margin: -7px 0 0 30px;
 }
 .content-inside ul a{
     display: block;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 30px;
     color: #2d3e50;
 }
 .content-inside ul a:hover{
@@ -220,7 +223,7 @@ header{
     background: #fff;
 }
 .content-inside p{
-    height: 240px;
+    height: 188px;
     line-height: 24px;
 }
 .hover-content-inside{
@@ -229,6 +232,200 @@ header{
     height: 64px;
     background: rgba(1,1,1, 0.1) url(images/hover-content-inside-bg.png) 30px 25px no-repeat;
 }
-
 /* ------------------------------  Stop content ------------------------------ */
+/*-----------------------------------------------------------------------------------*/
+/*  TENDERS
+/*-----------------------------------------------------------------------------------*/
+/* sidebar-tenders */
+.sidebar-tenders{
+    width: auto;
+    margin: 0 25px 0 0;
+    float: left;
+}
+.touch-menu{
+    display: block;
+    width: 29px;
+    height: 23px;
+    margin: 11px 0 10px 1px;
+    background: url(images/touch-menu-bg.png) no-repeat;
+}
+.sidebar-tenders-inside{
+    display: none;
+}
+.menu-head {
+    position: relative;
+    display: block;
+    width: 227px;
+    padding: 12px 0 12px 30px;
+    cursor: pointer;    
+    font-size: 16px;
+    color: #fff;
+    background: #0f788d url(images/left.png) 210px center no-repeat;
+}
+h3.active{
+    background: #0f788d url(images/down.png) 210px center no-repeat;
+}
+.menu-body {    
+    display:none;
+    width: 227px;
+}
+.menu-body a{
+    display:block;    
+    padding: 8px 40px;
+    text-decoration:none;
+    font-size: 15px;
+    color:#fff;
+    background-color:#0f788d;
+    border-top: 1px solid #fff;
+}
+.menu-body a:hover{
+    color: #000000;
+    text-decoration:underline;
+}
+.filter{
+    overflow: hidden;
+    padding: 27px 0 0 30px;
+}
+.filter h3{
+    padding: 0 0 23px 0;
+}
+.filter ul li{
+    height: 30px;
+}
+.filter span {
+    display: block;
+    margin: 0px 0 0px 30px;
+    padding: 4px 0 0 0;
+    font-size: 12px;
+    color: #23475f;
+}
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.radio {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 19px;
+  height: 19px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.radio + label {
+  cursor: pointer;
+}
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
 
+/* Прячем оригинальный чекбокс. */
+.radio:not(radio) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(radio) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.radio:not(radio) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #c6c6c6;
+  border-radius: 13px;
+  background: rgba(0,0,0,.04);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.radio:not(radio) + label:after {
+    content: '';
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+.radio:not(radio) + label:before {
+    content: '';
+    background: rgba(0,0,0,.04);
+}
+/* Меняем фон чекбокса, когда он включен. */
+.radio:checked + label:before {
+
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.radio:checked + label:after {
+    content: '\2714';
+    /*content: '\1601';*/
+    top: 2px;
+    left: 2px;
+    height: 0;
+    color: #848484;
+}
+/* Показываем получение фокуса. */
+.radio:focus(radio) + label:after{
+    width: 19px;
+    height: 19px;
+    content: '';
+    background: #fff;
+    border: 1px solid #c6c6c6;
+}
+
+.radio:focus + label:before {
+    width: 19px;
+    height: 19px;
+    content: '';
+    border: 1px solid #c6c6c6;
+    background: rgba(0,0,0,.1);
+}
+.filter input[type=submit]{
+    width: 199px;
+    margin: 16px 0 0 0;
+    padding: 12px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background: #0f788d;
+    border: none;
+}
+/* ct-descriptions */
+.ct-descriptions{
+    display: table;
+    padding: 0 30px 0 0;
+}
+.ct-descriptions h2{
+    padding: 10px 0 0 0;
+}
+.ct-descriptions ul:nth-child(2){
+    padding: 13px 0 10px 0;
+}
+.ct-descriptions ul{
+    display: table;
+    padding: 21px 0 10px 0;
+    border-bottom: 1px solid #d3dadf;
+}
+.ct-descriptions h3{
+    padding: 0 0 18px 0;
+    letter-spacing: 0.7px;
+}
+.ct-descriptions ul p{
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+.ct-descriptions ul a{
+    display: inline-block;
+    width: 162px;
+    margin: 14px 0 0 0px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #d3b556;
+}
+.ct-descriptions ul a:hover{
+    text-decoration: underline;
+    background: #F3CA4A;
+}
