@@ -5,7 +5,6 @@
 
 
 /* ----------------------------Блок присоединения шрифтов--------------------------------*/
-
 @font-face {
 font-family: 'HelveticaNeueCyr-Light';
 src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
@@ -16,7 +15,6 @@ src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix') format('emb
 font-weight: normal;
 font-style: normal;
 }
-
 @font-face {
 font-family: 'HelveticaNeueCyr-Roman';
 src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot');
@@ -27,7 +25,6 @@ src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix') format('emb
 font-weight: normal;
 font-style: normal;
 }
-
 @font-face {
 font-family: 'HelveticaNeueCyr-Medium';
 src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot');
@@ -38,7 +35,6 @@ src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix') format('em
 font-weight: normal;
 font-style: normal;
 }
-
 @font-face {
 font-family: 'HelveticaNeueCyr-Bold';
 src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot');
@@ -75,7 +71,7 @@ header{
 .header-inside{
     overflow: hidden;
     margin: 0 auto;
-    padding: 10px 0px 12px 0px;
+    padding: 3px 0px 12px 0px;
     border: 0px solid #00ccff;
 }
 .logo{
@@ -145,7 +141,8 @@ header{
 /* ------------------------------  Stop header ------------------------------ */
 /* ------------------------------  Start content ------------------------------ */
 .content{
-    overflow: hidden;    
+    overflow: hidden; 
+    padding: 0 0 70px 0;   
 }
 .content .content-suppliers, .content .content-companies, .content .content-tenders{
     width: 33.33%;
@@ -249,7 +246,7 @@ header{
     margin: 11px 0 10px 1px;
     background: url(images/touch-menu-bg.png) no-repeat;
 }
-.sidebar-tenders-inside{
+.sidebar-inside{
     display: none;
 }
 .menu-head {
@@ -259,28 +256,43 @@ header{
     padding: 12px 0 12px 30px;
     cursor: pointer;    
     font-size: 16px;
-    color: #fff;
-    background: #0f788d url(images/left.png) 210px center no-repeat;
+    color: #fff;    
 }
-h3.active{
-    background: #0f788d url(images/down.png) 210px center no-repeat;
+.menu-head-tenders{
+    background: #0f788d url(images/left.png) 210px center no-repeat;
+    border-bottom: 1px solid #fff;
+}
+h3.menu-head-tenders.active{
+    background: #0f788d url(images/down.png) 206px center no-repeat;
+    border-bottom: 2px solid #045667;
 }
 .menu-body {    
     display:none;
     width: 227px;
 }
 .menu-body a{
-    display:block;    
-    padding: 8px 40px;
+    display:inline-block;    
+    padding: 6.5px 30px;
     text-decoration:none;
     font-size: 15px;
-    color:#fff;
-    background-color:#0f788d;
+    color:#fff;    
+}
+.menu-body span{
+    padding: 8px 17px 0 0;
+    font-size: 14px;
+    color: #fff;
+    float: right;
+}
+.menu-body > li{
+    background: #717f8e;
     border-top: 1px solid #fff;
 }
-.menu-body a:hover{
-    color: #000000;
-    text-decoration:underline;
+.menu-body > li:hover{
+    background: #34495e;
+}
+
+.menu-body li:first-child{
+    border: none;
 }
 .filter{
     overflow: hidden;
@@ -429,3 +441,112 @@ h3.active{
     text-decoration: underline;
     background: #F3CA4A;
 }
+/* footer */
+footer{
+    overflow: hidden;    
+}
+.footer-block-1{
+    width: 23.5%;
+    margin: 0 0 0 30px;
+    float: left;
+}
+.footer-block-2{
+    width: 31.5%;
+    float: left;
+}
+.footer-block-3{
+    width: 20%;
+    float: left;
+}
+.footer-block-4{
+    width: 15.3%;
+    float: right;
+}
+footer h3{
+    padding: 0 0 16px 0;
+    color: #23475f;
+    letter-spacing: .6px;
+}
+footer a{
+    text-decoration: underline;
+    font-size: 14px;
+    color: #363636;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer div > ul > li > a{
+    line-height: 24px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  PROVIDERS
+/*-----------------------------------------------------------------------------------*/
+.menu-head-providers{
+    background: #d3b556 url(images/left.png) 210px center no-repeat;
+    border-bottom: 1px solid #fff;
+}
+h3.menu-head-providers.active{
+    background: #c2a447 url(images/down.png) 206px center no-repeat;
+    border-bottom: 2px solid #5e6457;
+}
+/* pt-descriptions */
+.pt-descriptions{
+    padding: 0 28px 0 0;
+}
+.pt-descriptions h2{
+    padding: 10px 0 15px 0;
+}
+.pt-descriptions ul{
+    overflow: hidden;    
+}
+.pt-descriptions li{    
+    position: relative;
+    padding: 0 0 2px 2px;
+    float: left;
+}
+.pt-descriptions > ul > li > a:hover{
+    transition: all 1s;
+    background: rgba(1,1,1, 0.7);
+}
+.pt-descriptions > ul > li > a:hover span{
+    transition: all 1s;
+    display: table-cell;
+}
+.pt-descriptions > ul > li > a{   
+    position: absolute; 
+    display: block;
+    width: 99%;
+    height: 98%;
+}
+.pt-descriptions > ul > li > a> span{
+    display: none;
+    vertical-align: middle;
+    width: 261px;
+    height: 193px;
+    text-align: center;      
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.pt-descriptions li img{
+    width: 255px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  COMPANY-MASTER
+/*-----------------------------------------------------------------------------------*/
+.menu-head-company-master{
+    background: #e87352 url(images/left.png) 210px center no-repeat;
+    border-bottom: 1px solid #fff;
+}
+h3.menu-head-company-master.active{
+    background: #d76545 url(images/down.png) 206px center no-repeat;
+    border-bottom: 2px solid #5e6457;
+}
+.menu-body-company-master li{
+    background: #717f8e;
+    border-top: 1px solid #fff;
+}
+.menu-body-company-master li:hover{
+    background: #34495e;
+}
+
