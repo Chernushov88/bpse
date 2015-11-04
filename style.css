@@ -145,21 +145,25 @@ header{
     padding: 0 0 70px 0;   
 }
 .content .content-suppliers, .content .content-companies, .content .content-tenders{
+    position: absolute;
     width: 33.33%;
     padding: 50px 0 0 0;
     float: left;
 }
+.content .content-companies{
+    left: 33.33%;
+}
+.content .content-tenders{
+    left: 66.66%
+}
 /* content-suppliers */
 .content-suppliers{
-    height: 774px;
     background: #eac85d;
 }
 .content-companies {
-    height: 774px;
     background: #e87352;
 }
 .content-tenders{
-    height: 774px;
     background: #3abec0;
 }
 
@@ -167,6 +171,7 @@ header{
     padding: 0 25px 0 29px;
 }
 .content-suppliers:hover .hover-content-inside, .content-companies:hover .hover-content-inside, .content-tenders:hover .hover-content-inside{
+    cursor: pointer;
     display: block ;
 }
 .content-inside h2{
@@ -220,10 +225,12 @@ header{
     background: #fff;
 }
 .content-inside p{
-    height: 188px;
+    height: 252px;
     line-height: 24px;
 }
 .hover-content-inside{
+    position: absolute;
+    bottom: 0;
     display: none;
     width: 100%;
     height: 64px;
@@ -759,17 +766,15 @@ p.hint:before{
     font-size: 16px;
     letter-spacing: -0.1px;
 }
-.tc-descpiption-3 form{
-
-}
 .tc-descpiption-3 form input[type=text]{
     width: 66%;
     height: 42px;
     padding: 0 0 0 8px;
     font-size: 14px;
     color: #cccccc;
-    box-shadow: inset 0px 2px 5px rgba(1,1,1,0.2);
+    /*box-shadow: inset 0px 2px 5px rgba(1,1,1,0.2);*/
     border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
 }
 .tc-descpiption-3 form ::-webkit-input-placeholder {color: #ccc;}
 .tc-descpiption-3 form :-moz-placeholder {color: #ccc;}
@@ -811,4 +816,122 @@ p.hint:before{
 }
 .pasword-bp a:first-child{
     margin: 0 33px 0 0;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  ENTER
+/*-----------------------------------------------------------------------------------*/
+.header-bottom{
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 42px 30px 0px 30px;
+    border: 0px solid #00cc00;
+}
+.header-bottom h3{
+    font-family: 'HelveticaNeueCyr-Medium';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.hb-left{
+    width: 45%;
+    float: left;
+}
+.hb-left h3{
+    padding: 0 0 24px 28px;
+}
+.hb-left ul{
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+.hb-left ul > li{
+    position: relative;
+}
+.hb-left ul a{
+    display: block;
+    padding: 0 0 0 30px;
+    color: #2d3e50;
+}
+.hb-left ul a:hover{
+    text-decoration: underline; 
+}
+.hb-left ul > li > a:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 9px;
+    height: 9px;
+    margin: 9px 0px 0px 0;
+    background: #2a4151;
+    float: left;
+}
+.hb-left ul > li:hover > a:before{
+    background: #211FD6;
+}
+.register{
+    display: inline-block;
+    width: 227px;
+    height: 42px;
+    margin: 30px 0 42px 0;
+    padding: 12px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #3a5570;    
+}
+/* hb-right */
+.hb-right{
+    width: 48%;
+    float: right;
+}
+.hb-right h3{
+    padding: 0 0 30px 0;
+}
+.hb-right form input[type=text]{
+    width: 100%;
+    height: 42px;
+    margin: 0 0 29px 0;
+    padding: 0 0 0 8px;
+    font-size: 14px;
+    color: #cccccc;
+    background: #f9f9f9;
+    border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
+}
+.hb-right form ::-webkit-input-placeholder {color: #ccc;}
+.hb-right form :-moz-placeholder {color: #ccc;}
+.hb-right form ::-moz-placeholder {color: #ccc;}
+.hb-right form :-ms-input-placeholder {color: #ccc;}
+.hb-right form input[type=submit]{
+    display: inline-block;
+    width: 227px;
+    height: 42px;
+    margin: 3px 0 0 0;
+    padding: 2px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #3a5570;
+    border: none;
+    float: right;
+}
+.hb-right form a{
+    display: block;
+    padding: 16px 42px 0 0;
+    color: #000;
+    float: right;
+}
+.hb-right form a:hover{
+    text-decoration: underline;
+}
+.hb-right form span{
+    display: block;
+    padding: 9px 98px 0 0;
+    float: right;
+}
+.social{
+    padding: 12px 0 0 0;
+    float: right;
+}
+.social li{
+    padding: 0 0 0 30px;
+    float: left;
 }
