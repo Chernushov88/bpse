@@ -550,7 +550,7 @@ h3.menu-head-company-master.active{
     background: #34495e;
 }
 /*-----------------------------------------------------------------------------------*/
-/*  PERSONAL-OFFICE
+/*  PERSONAL-OFFICE-1
 /*-----------------------------------------------------------------------------------*/
 /* user-po */
 .user-po{
@@ -580,13 +580,17 @@ h3.menu-head-company-master.active{
 .user-po-inside > li > a:hover{
     opacity: 0.8;
 }
-.sidebar-personal-office {
-    width: auto;
-    margin: 0 63px 0 30px;
+.sidebar-personal-office{
+    position: absolute;
+    left: 0;
+    width: 264px;
+    margin: 0 0 0 30px;
     float: left;
 }
 .sidebar-inside-personal h3.menu-head-po{
     width: 100%;
+    padding: 12px 0;
+    text-align: center;
     background: #0f788d;
 }
 .menu-body-po{
@@ -595,11 +599,13 @@ h3.menu-head-company-master.active{
 .sidebar-po{
     padding: 50px 0 0 0;
 }
-.po-descriptions{
-    display: table;
+.sidebar-po a img{
+    width: 100%;
 }
-.tabs__caption {
-
+.po-descriptions{
+    display: block;
+    width: 100%;
+    padding: 0 30px 0 357px;
 }
 .tabs__caption li {
     position: relative;
@@ -620,14 +626,14 @@ h3.menu-head-company-master.active{
 .tabs__content {
     display: none;
     background: #eeeeee;
-    padding: 32px 17px 70px 13px;
+    padding: 30px 17px 70px 13px;
 }
 .tabs__content.active {
     display: block;
 }
 .form-po ul{
     overflow: hidden; 
-    padding: 0 0 28px 0;   
+    padding: 2px 0 28px 0;   
 }
 .form-po li{
     padding: 0 23px 0 0;
@@ -663,6 +669,118 @@ h3.menu-head-company-master.active{
     font-size: 14px;
     letter-spacing: 0.7px;
 }
-.tabs__content div:last-child{
+.tabs__content div.tc-descpiption:last-child{
     border: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  PERSONAL-OFFICE-2
+/*-----------------------------------------------------------------------------------*/
+.lining{
+    height: 44px;
+}
+.tc-descpiption-2{
+    position: relative;
+    overflow: hidden;
+    padding: 0px 0 7px 0;
+    border-bottom: 1px solid #d3dadf;
+}
+.tc-descpiption-2 h3{
+    padding: 4px 0 19px 0;
+    letter-spacing: -0.1px;
+}
+.tc-descpiption-2 p{
+    line-height: 18px;
+    font-size: 14px;
+    color: #111;
+}
+.tcd-a{
+    display: block;
+    margin: 0 22px 0 0;
+    float: left;
+}
+.add-delete{
+    position: absolute;
+    right: 0;
+    bottom: 7px;    
+}
+.add-delete a{
+    margin: 0 0 0 52px;
+    padding: 0px 0 5px 27px;
+    font-size: 14px;
+    color: #23475f;
+}
+.add{
+    display: inline-block;
+    background: url(images/add-bg.png) 4px 0px no-repeat;
+}
+.delete{
+    display: inline-block;
+    background: url(images/delete-bg.png) 0px 0px no-repeat;
+}
+.page-title-map{
+    padding: 12px 0 15px 0;
+    font-size: 14px;
+}
+.page-title-map a, .page-title-map span{
+    display: inline-block;
+    color: #23475f;
+}
+.page-title-map a.active-post{
+    color: #000;
+}
+.page-title-map span{
+    padding: 0 5px;
+}
+p.hint{
+    display: inline-block;
+    width: 52%;
+    margin: 21px 0 0 2px;
+    padding: 12px 0px 25px 13px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+}
+p.hint:before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 13px;
+    margin: -25px 0 12px 10px;
+    background: url(images/hint-before-bg.png) 0px 0px no-repeat;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  PERSONAL-OFFICE-3
+/*-----------------------------------------------------------------------------------*/
+.tc-descpiption-3{
+    padding: 0 0 7px 0;
+}
+.tc-descpiption-3 h3{
+    padding: 4px 0 19px 0;
+    letter-spacing: -0.1px;
+}
+.tc-descpiption-3 form{
+
+}
+.tc-descpiption-3 form input[type=text]{
+    width: 65%;
+    height: 38px;
+    padding: 0 0 0 8px;
+    font-size: 14px;
+    color: #cccccc;
+    box-shadow: 0px 3px 6PX rgba(1,1,1,0.1) inset;
+}
+.tc-descpiption-3 form ::-webkit-input-placeholder {color: #ccc;}
+.tc-descpiption-3 form :-moz-placeholder {color: #ccc;}
+.tc-descpiption-3 form ::-moz-placeholder {color: #ccc;}
+.tc-descpiption-3 form :-ms-input-placeholder {color: #ccc;}
+.tc-descpiption-3 form input[type=submit]{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #0f788d;
+    border: none;
+}
+.tc-descpiption-3 form span{
+
 }
