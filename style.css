@@ -752,35 +752,63 @@ p.hint:before{
 /*  PERSONAL-OFFICE-3
 /*-----------------------------------------------------------------------------------*/
 .tc-descpiption-3{
-    padding: 0 0 7px 0;
+    padding: 0 0 0 5px;
 }
 .tc-descpiption-3 h3{
-    padding: 4px 0 19px 0;
+    padding: 4px 0 33px 0;
+    font-size: 16px;
     letter-spacing: -0.1px;
 }
 .tc-descpiption-3 form{
 
 }
 .tc-descpiption-3 form input[type=text]{
-    width: 65%;
-    height: 38px;
+    width: 66%;
+    height: 42px;
     padding: 0 0 0 8px;
     font-size: 14px;
     color: #cccccc;
-    box-shadow: 0px 3px 6PX rgba(1,1,1,0.1) inset;
+    box-shadow: inset 0px 2px 5px rgba(1,1,1,0.2);
+    border: 1px solid #d6d6d6;
 }
 .tc-descpiption-3 form ::-webkit-input-placeholder {color: #ccc;}
 .tc-descpiption-3 form :-moz-placeholder {color: #ccc;}
 .tc-descpiption-3 form ::-moz-placeholder {color: #ccc;}
 .tc-descpiption-3 form :-ms-input-placeholder {color: #ccc;}
 .tc-descpiption-3 form input[type=submit]{
-    width: 30%;
-    height: 40px;
+    width: 26%;
+    height: 42px;
+    margin: 0 3.5% 0 0;
     font-size: 16px;
     color: #fff;
     background: #0f788d;
     border: none;
+    float: right;
+}
+.tc-descpiption-3 form input[type=submit]:hover{
+    opacity: 0.8;
 }
 .tc-descpiption-3 form span{
-
+    display: block;
+    padding: 20px 0 14px 0;
+    font-size: 14px;
+}
+.pasword-bp{
+    padding: 30px 0 0 0;
+}
+.pasword-bp a{
+    display: inline-block;
+    width: 229px;
+    height: 42px;
+    padding: 13px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #c2a346;
+}
+.pasword-bp a:hover{
+    opacity: 0.8;
+}
+.pasword-bp a:first-child{
+    margin: 0 33px 0 0;
 }
