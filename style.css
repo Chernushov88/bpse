@@ -72,6 +72,7 @@ header{
     overflow: hidden;
     margin: 0 auto;
     padding: 3px 0px 12px 0px;
+    text-transform: uppercase;
     border: 0px solid #00ccff;
 }
 .logo{
@@ -99,7 +100,7 @@ header{
     display: block;    
     padding: 18px 0 0px 0;
     letter-spacing: 1px;
-    text-transform: uppercase;   
+       
     color: #2d3e50; 
 }
 .enter-contacts a:hover{
@@ -481,6 +482,7 @@ footer a{
 }
 footer a:hover{
     text-decoration: none;
+    color: #23475f;
 }
 footer div > ul > li > a{
     line-height: 24px;
@@ -776,10 +778,10 @@ p.hint:before{
     border: 1px solid #d6d6d6;
     border-top: 1px solid #a0a0a0;
 }
-.tc-descpiption-3 form ::-webkit-input-placeholder {color: #ccc;}
-.tc-descpiption-3 form :-moz-placeholder {color: #ccc;}
-.tc-descpiption-3 form ::-moz-placeholder {color: #ccc;}
-.tc-descpiption-3 form :-ms-input-placeholder {color: #ccc;}
+.tc-descpiption-3 form ::-webkit-input-placeholder {font-size: 14px; color: #ccc;}
+.tc-descpiption-3 form :-moz-placeholder {font-size: 14px; color: #ccc;}
+.tc-descpiption-3 form ::-moz-placeholder {font-size: 14px; color: #ccc;}
+.tc-descpiption-3 form :-ms-input-placeholder {font-size: 14px; color: #ccc;}
 .tc-descpiption-3 form input[type=submit]{
     width: 26%;
     height: 42px;
@@ -896,10 +898,10 @@ p.hint:before{
     border: 1px solid #d6d6d6;
     border-top: 1px solid #a0a0a0;
 }
-.hb-right form ::-webkit-input-placeholder {color: #ccc;}
-.hb-right form :-moz-placeholder {color: #ccc;}
-.hb-right form ::-moz-placeholder {color: #ccc;}
-.hb-right form :-ms-input-placeholder {color: #ccc;}
+.hb-right form ::-webkit-input-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.hb-right form :-moz-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.hb-right form ::-moz-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.hb-right form :-ms-input-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
 .hb-right form input[type=submit]{
     display: inline-block;
     width: 227px;
@@ -907,6 +909,8 @@ p.hint:before{
     margin: 3px 0 0 0;
     padding: 2px 0 0 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
     font-size: 16px;
     color: #fff;
     background: #3a5570;
@@ -935,3 +939,254 @@ p.hint:before{
     padding: 0 0 0 30px;
     float: left;
 }
+/*-----------------------------------------------------------------------------------*/
+/*  CONTACTS
+/*-----------------------------------------------------------------------------------*/
+.header-contacts{
+    padding: 0 30px 62px 30px;
+}
+.header-contacts-inside h3{
+    padding: 43px 0 33px 0;
+    text-align: center;
+    font-family: 'HelveticaNeueCyr-Medium';
+    text-transform: uppercase;
+}
+.header-contacts-inside form ul{
+    overflow: hidden;
+}
+.header-contacts-inside form ul li:first-child{
+    width: 47.5%;
+    float: left;
+}
+.header-contacts-inside form ul li:last-child{
+    width: 47.5%;
+    float: right;
+}
+.header-contacts-inside form input[type=text]{
+    width: 100%;
+    height: 42px;
+    margin: 0 0 29px 0;
+    padding: 0 0 0 8px;
+    font-size: 14px;
+    color: #cccccc;
+    background: #f9f9f9;
+    border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
+}
+.header-contacts-inside form ::-webkit-input-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.header-contacts-inside form :-moz-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.header-contacts-inside form ::-moz-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.header-contacts-inside form :-ms-input-placeholder {font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 14px; color: #ccc;}
+.header-contacts-inside form textarea{
+    width: 100%;
+    height: 184px;
+    margin: 0 0 25px 0;
+    padding: 11px 0 0 13px;    
+    font-size: 14px;
+    background: #f9f9f9;
+    border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
+}
+.header-contacts-inside form input[type=submit]{
+    display: inline-block;
+    width: 227px;
+    height: 42px;
+    padding: 2px 0 0 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background: #3a5570;
+    border: none;
+    float: right;
+}
+.header-contacts-inside form input[type=submit]:hover{
+    opacity: 0.8;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  FORMS
+/*-----------------------------------------------------------------------------------*/
+/* header-forms */
+.header-forms{
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 11px 0px 10px 0px;    
+    border: 0px solid #00ccff;
+}
+.logo{
+    width: 33.33%;   
+    float: left;
+    border: 0px solid #0f0cff;
+}
+.logo-a{
+    display: block;
+    height: 47px;
+    margin: 0 0 0 30px;
+    background: url(images/logo-bg-2.jpg) no-repeat;
+}
+.hf-enter-contacts{
+    width: 33.34%;
+    float: left;
+    border: 0px solid #99fcff;
+}
+.hf-enter-contacts-inside{
+    width: 216px;
+    margin: 0 auto;
+    padding: 0px;
+}
+.hf-enter-contacts a{
+    display: block;    
+    padding: 18px 0 0px 0;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: #2d3e50; 
+}
+.hf-enter-contacts a:hover{
+    text-decoration: underline;    
+}
+.hf-enter{
+    float: left;
+}
+.hf-contacts{
+    float: right;
+}
+.hf-enter-contacts-span{
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: 0 0 0 18px; 
+    background: url(images/enter-contacts-span.png) no-repeat;
+    float: left;
+}
+.hf-email{    
+    padding: 18px 30px 0 0;
+    float: right;
+}
+.hf-email a{
+    display: block;
+    padding: 0 0 5px 35px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: #2d3e50; 
+    background: url(images/hf-email-bg.png) 0px 0px no-repeat;
+}
+/* content-forms */
+.content-contact{
+    padding: 0;
+}
+h3.content-forms-h3{
+    padding: 20px 0 12px 0;
+    color: #e74c3c;
+    background: #ebebeb;
+    border-bottom: 1px solid #ccc;
+}
+h3.content-forms-h3 span{
+    display: inline-block;
+    padding: 0 0 0 30px;
+}
+.content-forms{
+    padding: 20px 30px 50px 30px;
+    font-family: 'Roboto', sans-serif; font-weight: 400;
+    background: #ebebeb;
+}
+.content-forms h4{
+    padding: 5px 0 5px 0;
+    color: #23475f;
+}
+.content-forms label{
+    display: block;
+    padding: 0 0 7px 0;
+    font-size: 14px;
+    color: #898989;
+}
+form.cf-form > ul > li:last-child{
+    width: 48%;
+}
+form.cf-form input[type=text]{
+    width: 48%;
+    height: 42px;
+    margin: 0 0 0px 0;
+    padding: 0 0 0 8px;
+    font-size: 14px;
+    background: #fdfdfd;
+    border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
+}
+form.cf-form ::-webkit-input-placeholder {font-size: 14px; color: #ccc;}
+form.cf-form :-moz-placeholder {font-size: 14px; color: #ccc;}
+form.cf-form ::-moz-placeholder {font-size: 14px; color: #ccc;}
+form.cf-form :-ms-input-placeholder {font-size: 14px; color: #ccc;}
+form.cf-form textarea{
+    width: 48%;
+    min-height: 125px;
+    margin: 0 0 0px 0;
+    padding: 11px 0 0 13px;    
+    font-size: 14px;
+    background: #f9f9f9;
+    border: 1px solid #d6d6d6;
+    border-top: 1px solid #a0a0a0;
+}
+form.cf-form input.budget{
+    width: 43%;
+}
+form.cf-form input[type=submit]{
+    display: inline-block;
+    width: 227px;
+    height: 42px;
+    padding: 2px 0 0 0;
+    font-size: 16px;
+    color: #fff;
+    background: #dfbe58;
+    border: none;
+    float: right;
+}
+.all-filds{
+    display: block;
+    padding: 21px 0 0 4px;
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer forms*/
+.footer-forms{
+    overflow: hidden;
+    padding: 20px 0 10px 0;
+    border: 0px solid #000;
+}
+.footer-forms-block-1{
+    width: 39.2%;
+    margin: 0 0 0 35px;
+    float: left;
+}
+.footer-forms-block-2{
+    width: 31.5%;
+    float: left;
+}
+.footer-forms-block-3{
+    padding: 0 24px 0 0;
+    float: right;
+}
+.footer-forms h3{
+    font-family: 'PT Sans', sans-serif; 
+    font-weight: 600;
+    padding: 0 0 16px 0;
+    color: #23475f;
+    letter-spacing: 0px;
+}
+.footer-forms a{
+    font-family: 'PT Sans', sans-serif; 
+    font-weight: 400;
+}
+/*footer div > ul > li > a{
+    line-height: 24px;
+}*/
